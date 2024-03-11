@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Responsive UI ⋅ Igor Kotov</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicons/site.webmanifest" />
+  </head>
+  <body>
+    <div class="content">
+      <nav class="caseToc">
+        <ul>
+          <li class="backlink">
+            <a class="backlink" href="/index.html">&lt; Back to all cases</a>
+          </li>
+          <li><a class="summary activeTocItem" href="#summary">Summary</a></li>
+          <li>
+            <a class="about-the-product" href="#about-the-product"
+              >About the product</a
+            >
+          </li>
+          <li><a class="backstory" href="#backstory">Backstory</a></li>
+          <li><a class="inspection" href="#inspection">Inspection</a></li>
+          <li>
+            <a class="proving-value" href="#proving-value">Proving value</a>
+          </li>
+          <li>
+            <a class="design" href="#design">Design</a>
+            <ul>
+              <li>
+                <a class="menu-screens" href="#menu-screens">Menu screens</a>
+              </li>
+              <li>
+                <a class="fill-up-screen" href="#fill-up-screen"
+                  >Fill-up screen</a
+                >
+              </li>
+              <li>
+                <a class="payment-screen" href="#payment-screen"
+                  >Payment screen</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="development-and-testing" href="#development-and-testing"
+              >Development & testing</a
+            >
+          </li>
+          <li>
+            <a class="impact" href="#impact">Impact</a>
+          </li>
+          <li>
+            <a class="support-and-scaling" href="#support-and-scaling"
+              >Support & scaling</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <article class="caseArticle">
+        <section id="summary">
+          <div class="caseArticleHeader">
+            <div class="caseArticleHeaderBacklink">
+              <a href="/index.html">&lt; Back to all cases</a>
+            </div>
+            <div class="caseArticleHeaderCoverFrame">
+              <img
+                class="caseArticleHeaderCoverDesktop"
+                src="images/Res/Res-cover-desktop.png"
+              />
+              <img
+                class="caseArticleHeaderCoverMobile"
+                src="images/Res/Res-cover-mobile.png"
+              />
+            </div>
+            <div class="caseArticleHeaderInfo">
+              <h1 class="article">Responsive UI</h1>
+              <div class="caseArticleHeaderInfoProps">
+                <p class="labelText caseArticleHeaderInfoPropName">Product</p>
+                <a
+                  class="labelText caseArticleHeaderInfoPropValue"
+                  href="https://kontur.ru/market/kassy"
+                  target="”_blank”"
+                  >Kontur.Kassa</a
+                >
+                <p class="labelText caseArticleHeaderInfoPropName">Year</p>
+                <p class="labelText caseArticleHeaderInfoPropValue">2021</p>
+              </div>
+              <p class="pageText article">
+                I improved Kassa’s accessibility by making its layouts
+                responsive. I developed scenario-motivated resizing rules and
+                designed interchangeable variations of the UI components. These
+                enhancements brought in new users, made the product more robust
+                and attractive, and opened new expansion opportunities.
+              </p>
+              <p class="pageText article">
+                My contribution included metrics analysis, proving the
+                motivation to stakeholders, interface design, developer handoff
+                and consultation, hands-on implementation testing, and working
+                with the post-release user feedback.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="articleBody">
+          <section id="about-the-product">
+            <h2 class="article">About the product</h2>
+            <p class="pageText article">
+              Kontur.Kassa is a POS application for retail and catering
+              businesses. It helps cashiers and servers to take orders, process
+              payments, and register necessary receipts. Kassa receives
+              inventory data from
+              <a href="https://kontur.ru/market" target="”_blank”"
+                >Kontur.Market</a
+              >
+              and sends back transaction history used for business analytics.
+            </p>
+            <p class="pageText article">
+              The app has over 40,000 monthly active users on Windows and
+              Android.
+            </p>
+          </section>
+          <section id="backstory">
+            <h2 class="article">Backstory</h2>
+            <p class="pageText article">
+              The development of Kassa for Windows began in 2017. Working on the
+              MVP, the team had to compromise on resource limitations and strict
+              deadlines, so they cut out or overlooked some parts of the
+              implementation.
+            </p>
+            <p class="pageText article">
+              One of those aspects was UI adaptivity. Back then, we presumed the
+              app to be run only on standard-sized displays and specific
+              preconfigured devices, so we only targeted the screen ratios of
+              16:10 and 16:9. For quite a long time, it had been just fine. The
+              team never received user complaints or had other reasons to move
+              the responsive features up in the task queue.
+            </p>
+            <p class="pageText article">
+              A few years after the first release of Kassa, our marketing team
+              ran a promotion campaign aimed at attracting new audience from
+              competitors’ solutions. They found out that the users willing to
+              switch were more likely to do so, provided they could keep the
+              hardware they were already working on. That hardware included
+              displays — which were different from the ones we supported. It
+              became clear that poor UI scalability was no longer just a backlog
+              record but a restraining factor for business growth.
+            </p>
+            <p class="pageText article">
+              It was a perfect moment to take the lead and look into the
+              problem.
+            </p>
+          </section>
+          <section id="inspection">
+            <h2 class="article">Inspection</h2>
+            <p class="pageText article">
+              First, I decided to study the situation to determine how critical
+              the expected issues were. I decreased the width of the application
+              window and tried to complete the most basic user scenarios. This
+              test session revealed many bugs of different severity: some were
+              only visual defects, while others badly affected user experience
+              or made whole scenarios incompletable:
+            </p>
+            <p class="pageText article note">
+              All visuals on this page were originally in Russian. I translated
+              them into English to provide more context for the reader.
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Res/Res-1-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              The abundance of resizing issues inspired me to widen the scope of
+              the desired fix. I wanted the solution to eliminate the errors
+              locally and introduce universal in-app adaptivity guides. I
+              believed that adhering to these rules in design and development
+              would boost the coherence and robustness of Kassa’s UI.
+            </p>
+          </section>
+          <section id="proving-value">
+            <h2 class="article">Proving value</h2>
+            <p class="pageText article">
+              I assumed that the task would be costly in development. That’s
+              why, before committing to it further, I decided to get solid proof
+              that the scaling issues were worth fixing. For that, I wanted to
+              get the upper bound of users who would benefit from the solution,
+              counting the potential app adopters interviewed during the promo
+              campaign and our then-present users. The former was easy to obtain
+              — I got the necessary data from our marketing team. The latter was
+              a bit more tricky.
+            </p>
+            <p class="pageText article">
+              Firstly, I reached out to our customer support to see if there
+              were any inquiries related to corrupt UI. Surprisingly, we found
+              very few of them. That could have stopped the research, but I had
+              to dig deeper. With the help of our analysts and developers, I
+              collected the effective resolutions of displays that our users
+              worked on:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Res/Res-2-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              After doing some math on these data and clustering the dimensions
+              by screen ratio, I calculated the share of the existing Kassa
+              users likely affected by UI adaptivity bugs.
+            </p>
+            <p class="pageText article">
+              Gluing together all the gathered info gave me quite a figure.
+              Making the app responsive would improve the usability experience
+              for about 24% of our Windows users. This strong point helped me
+              pitch the idea to the stakeholders — I got the green light to move
+              on and elaborate on the solution.
+            </p>
+          </section>
+          <section id="design">
+            <h2 class="article">Design</h2>
+            <p class="pageText article">
+              During the design phase, I focused on layouts covering all the
+              primary in-app scenarios and most of the rarer ones.
+            </p>
+          </section>
+          <section id="menu-screens">
+            <h3 class="article">Menu screens</h3>
+            <p class="pageText article">
+              Kassa’s menu is like a cashier’s back office. Its starting point
+              is the Shift summary screen, a dashboard with key sales insights
+              and easy access to the often-used features.
+            </p>
+            <p class="pageText article">
+              The main adaptivity problem here was with the quick actions panel.
+              Its fixed width made the actions overlap with the shift statistics
+              on narrow screens, making the summary illegible:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Res/Res-3-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              I aimed to keep the shift stats readable regardless of the screen
+              width. I also wanted the quick actions to always be available
+              without scrolling for fast user workflows.
+            </p>
+            <p class="pageText article">
+              As a solution, I suggested displaying action shortcuts differently
+              depending on the window width. If there’s enough space, the items
+              show up the regular way — in a block. Otherwise, the actions
+              appear as buttons. To save precious vertical room, the buttons
+              only take up one row. If some actions can’t fit in, they hide
+              inside the “More” dropdown. The order in which the actions are
+              hidden correlates with how popular each one is — I obtained this
+              data from our analysts. Here’s what it looks like:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="res-1-video"
+                  poster="images/Res/Res-1-poster.png"
+                >
+                  <source src="videos/Res/Res-1.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-1.webm" type="video/webm" />
+                  <source src="videos/Res/Res-1.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              Under the other menu sections, there’s more detailed info about
+              receipts, sold items, and cash operations. There are many tables
+              and lists, so the issues were mostly wrong formatting and text
+              truncation.
+            </p>
+            <p class="pageText article">
+              The fixes were straightforward. I depicted the desired behaviour
+              in the auto-layout prototypes. Here are the “before“ and the
+              “after“:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="res-2-video"
+                  poster="images/Res/Res-2-poster.png"
+                >
+                  <source src="videos/Res/Res-2.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-2.webm" type="video/webm" />
+                  <source src="videos/Res/Res-2.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              As seen from the two demos above, I also worked on the global
+              layout. I defined the percentage rule for how the menu and the
+              content share the screen and specified the containers’ min-width
+              values. With these tweaks, the window area is used more
+              effectively, and the UI looks balanced on both wide and compact
+              monitors.
+            </p>
+          </section>
+          <section id="fill-up-screen">
+            <h3 class="article">Fill-up screen</h3>
+            <p class="pageText article">
+              The Fill-up screen is the most critical piece of UI in Kassa —
+              every sale starts here. Cashiers can add items to the cart and
+              modify and delete entities. The added items are on the left, while
+              the right side has the search bar and the tiles for quickly adding
+              popular goods.
+            </p>
+            <p class="pageText article">
+              I identified two major flaws in this interface. The first one was
+              the broken resizing behaviour of the cart panel. Strangely enough,
+              the width of this layout depended on the window height. That
+              caused the item list to either collapse too much or appear overly
+              large on non-standard displays. Furthermore, the total amount on
+              the primary "To payment" button could get pushed off the frame and
+              become invisible to the user:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="res-3-video"
+                  poster="images/Res/Res-3-poster.png"
+                >
+                  <source src="videos/Res/Res-3.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-3.webm" type="video/webm" />
+                  <source src="videos/Res/Res-3.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              To make things right, I set the cart panel’s x-size to rely on the
+              screen width instead of its height. I also adjusted the cart
+              container’s minimum width and improved the primary button to
+              dynamically change the content based on free horizontal space.
+              These tweaks ensure the user can read the cart total no matter
+              what:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="res-4-video"
+                  poster="images/Res/Res-4-poster.png"
+                >
+                  <source src="videos/Res/Res-4.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-4.webm" type="video/webm" />
+                  <source src="videos/Res/Res-4.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              Another problem was the inflexible item tiles. Changing the screen
+              width made the grid scale as a whole, where each tile could grow
+              or shrink infinitely. In these conditions, tiles became
+              practically useless on wide monitors: their titles were harder to
+              scan, and smaller hitboxes took more effort to aim at:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="res-5-video"
+                  poster="images/Res/Res-5-poster.png"
+                >
+                  <source src="videos/Res/Res-5.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-5.webm" type="video/webm" />
+                  <source src="videos/Res/Res-5.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              The tile grid is a susceptible area UX-wise. Our customers usually
+              configure the tiles right after they buy Kassa and set up all the
+              hardware. The cashiers get used to the tile arrangement over time,
+              so any unexpected changes in the layout can bring discomfort and
+              temporarily slow down UI interaction. That is why my concern was
+              not only to adapt the tiles to various screen sizes but also to
+              minimise the troubling impact on current users.
+            </p>
+            <p class="pageText article">
+              I assigned each tile min-width and max-width values, which I
+              determined empirically based on our users’ display dimensions. The
+              length of a tile row stopped being static: Kassa would now try to
+              fit in as many as it could within the tile size constraints:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="res-6-video"
+                  poster="images/Res/Res-6-poster.png"
+                >
+                  <source src="videos/Res/Res-6.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-6.webm" type="video/webm" />
+                  <source src="videos/Res/Res-6.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="payment-screen">
+            <h3 class="article">Payment screen</h3>
+            <p class="pageText article">
+              Every sale ends on the Payment screen. Here, cashiers take
+              payments, apply discounts, and print receipts. The interface is
+              dense: a right-side menu, a panel in the centre, and a list of
+              items on the left. The hardcoded widths of the first two made the
+              cart layout squeeze and break as the app window got thinner:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Res/Res-4-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              Both the payment menu and the panel hold quite a bit of
+              information, which is contextually essential for the user. It
+              wasn’t possible to hide any of it without drastic changes to the
+              existing design, and rebuilding the layout felt beyond the scope
+              of dealing with responsiveness.
+            </p>
+            <p class="pageText article">
+              I thought a more manageable way might be not to show the cart on
+              compact screens. I assumed that doing so would not hurt user
+              experience since the contents of a sale aren’t that relevant at
+              the payment stage. To make it certain, I asked our UX researchers
+              for help. We conducted a series of interviews, where most
+              participants stated they “liked” the item list on the Payment
+              screen. However, no one could name a viable reason they still
+              needed the cart after fill-up. We agreed that my hypothesis was
+              confirmed — even considering possible bias.
+            </p>
+            <p class="pageText article">
+              In the adaptivity rules, I mentioned the breakpoint value — if the
+              screen width goes below it, the item panel disappears to provide
+              extra space for the most crucial UI. I also capped the size of the
+              central panel so that the numpad stays ergonomic:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="res-7-video"
+                  poster="images/Res/Res-7-poster.png"
+                >
+                  <source src="videos/Res/Res-7.mp4" type="video/mp4" />
+                  <source src="videos/Res/Res-7.webm" type="video/webm" />
+                  <source src="videos/Res/Res-7.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="development-and-testing">
+            <h2 class="article">Development & testing</h2>
+            <p class="pageText article">
+              In this case, the development and the testing intertwined with the
+              design and were carried out in parallel. Over the first weeks of
+              prototyping, our front-end developers put up the UI mockups on
+              Storybook. As the work progressed, I iteratively reviewed how the
+              interface behaved on different screen widths, proposed suggestions
+              and corrected the guides.
+            </p>
+            <p class="pageText article">
+              When we settled all the adaptivity rules, I thoroughly described
+              them in the designs. After we shipped the new logic to our users’
+              devices, I hosted a presentation for the team to get us all in
+              sync. I spoke about the improvements, reflected on the process and
+              the outcome, and put forward future possibilities.
+            </p>
+          </section>
+          <section id="impact">
+            <h2 class="article">Impact</h2>
+            <p class="pageText article">
+              Making Kassa’s UI adaptive let our team earn new customers who
+              have switched to us from competing software. Within the first six
+              months after the updates came out, 41% of the campaign-discovered
+              potential adopters became our users. Overall,
+              <span
+                >we levelled up the interface accessibility for 19% of our
+                audience on Windows.</span
+              >
+            </p>
+            <p class="pageText article">
+              The product became a more appealing solution for businesses that
+              have yet to work with Kassa. Implementing responsiveness helped us
+              keep up with the leading apps in the field.
+            </p>
+            <p class="pageText article">
+              We encountered some negative feedback from the continuing users,
+              though — there were inquiries on the shortened rows of item tiles.
+              We expected these issues, but the reason for the complaints
+              surprised us. Most complaining customers had their tiles set up to
+              fit into the viewport. The applied adaptivity constraints made the
+              tile grid grow vertically and brought up the need for the scroll.
+              As we found out later, scrolling delays the workflow, so users try
+              to avoid it at any cost. Luckily, tiles in Kassa can be easily
+              rearranged and organised into groups. We got the users through the
+              process so that their tiles returned to being just a tap away. The
+              problem was resolved.
+            </p>
+            <p class="pageText article">
+              This situation exposed a remarkable UX insight and highlighted the
+              importance of determining the genuine reasons for users’ reactions
+              and distinguishing between emotional and rational feedback.
+            </p>
+          </section>
+          <section id="support-and-scaling">
+            <h2 class="article">Support & scaling</h2>
+            <p class="pageText article">
+              Giving our interfaces stronger scalability resulted in refactoring
+              the core app code, making it easier to read and maintain. But more
+              notably — we set a higher standard for future development. All
+              designs are now prepared in several differently-sized layouts and
+              equipped with adaptivity guides. If possible, we try to reuse
+              resizing patterns across similar UI elements. Finally, we do
+              hands-on testing to monitor the quality of the implementation.
+            </p>
+            <p class="pageText article note">
+              One of the best designs I later did with adaptivity in mind was
+              for the catering features of Kassa.
+              <a href="/pos-app-for-catering.html">Read this case</a>
+            </p>
+            <p class="pageText article">
+              We made a list of related design debt to keep upgrading Kassa’s
+              existing interfaces. Every quarter, the designers propose the most
+              critical tasks from this list for development. The priority of
+              each task is calculated based on multiple criteria, such as how
+              disturbing the flaw is and how many users are affected.
+            </p>
+            <p class="pageText article">
+              I believe that all the work on the scalable UI pays off in the
+              long run. It boosts the product’s overall quality, making it more
+              accessible and loved by customers. Conforming to adaptivity
+              standards would allow Kassa to expand across a broader range of
+              devices. Ultimately, it means better sales and higher user
+              satisfaction.
+            </p>
+            <div class="caseArticleFooter">
+              <div class="caseArticleDivider"></div>
+              <div class="caseArticleFooterLinks">
+                <div class="caseArticleFooterCaseLink">
+                  <a href="/pos-app-for-catering.html"
+                    >&gt; Read next case: POS app for catering</a
+                  >
+                </div>
+                <div class="caseArticleFooterSocialLinks">
+                  <a
+                    href="https://www.linkedin.com/in/igorkotov-pd/"
+                    target="”_blank”"
+                    >LinkedIn</a
+                  >
+                  <a href="https://telegram.me/igorkotov" target="”_blank”"
+                    >Telegram</a
+                  >
+                  <a href="mailto:igorkotov@zoho.com">Email</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <script src="/scripts/Res.js"></script>
+  </body>
+</html>

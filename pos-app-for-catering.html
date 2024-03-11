@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>POS app for catering ⋅ Igor Kotov</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicons/site.webmanifest" />
+  </head>
+  <body>
+    <div class="content">
+      <nav class="caseToc">
+        <ul>
+          <li class="backlink">
+            <a class="backlink" href="/index.html">&lt; Back to all cases</a>
+          </li>
+          <li><a class="summary activeTocItem" href="#summary">Summary</a></li>
+          <li>
+            <a class="about-the-product" href="#about-the-product"
+              >About the product</a
+            >
+          </li>
+          <li><a class="backstory" href="#backstory">Backstory</a></li>
+          <li><a class="concept" href="#concept">Concept</a></li>
+          <li>
+            <a class="design" href="#design">Design</a>
+            <ul>
+              <li>
+                <a class="table-orders" href="#table-orders">Table orders</a>
+              </li>
+              <li>
+                <a class="takeaway-orders" href="#takeaway-orders"
+                  >Takeaway orders</a
+                >
+              </li>
+              <li>
+                <a class="combining-scenarios" href="#combining-scenarios"
+                  >Combining scenarios</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="development-and-testing" href="#development-and-testing"
+              >Development & testing</a
+            >
+          </li>
+          <li>
+            <a class="impact" href="#impact">Impact</a>
+          </li>
+          <li>
+            <a class="support-and-scaling" href="#support-and-scaling"
+              >Support & scaling</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <article class="caseArticle">
+        <section id="summary">
+          <div class="caseArticleHeader">
+            <div class="caseArticleHeaderBacklink">
+              <a href="/index.html">&lt; Back to all cases</a>
+            </div>
+            <div class="caseArticleHeaderCoverFrame">
+              <img
+                class="caseArticleHeaderCoverDesktop"
+                src="images/Cat/Cat-cover-desktop.png"
+              />
+              <img
+                class="caseArticleHeaderCoverMobile"
+                src="images/Cat/Cat-cover-mobile.png"
+              />
+            </div>
+            <div class="caseArticleHeaderInfo">
+              <h1 class="article">POS app for catering</h1>
+              <div class="caseArticleHeaderInfoProps">
+                <p class="labelText caseArticleHeaderInfoPropName">Product</p>
+                <a
+                  class="labelText caseArticleHeaderInfoPropValue"
+                  href="https://kontur.ru/market/kassy"
+                  target="”_blank”"
+                  >Kontur.Kassa</a
+                >
+                <p class="labelText caseArticleHeaderInfoPropName">Year</p>
+                <p class="labelText caseArticleHeaderInfoPropValue">2022</p>
+              </div>
+              <p class="pageText article">
+                I built the UI for two new complex features of Kassa concerning
+                the existing app mechanics and patterns. The solution helped the
+                product enter a new market, attract more users, and increase
+                customer loyalty.
+              </p>
+              <p class="pageText article">
+                My contribution included user research, interface design,
+                developer handoff and consultation, hands-on testing of the
+                implementation, and after-release support, such as collecting
+                user feedback and proposing further feature enhancements to the
+                stakeholders.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="articleBody">
+          <section id="about-the-product">
+            <h2 class="article">About the product</h2>
+            <p class="pageText article">
+              Kontur.Kassa is a POS application for retail and catering
+              businesses. It helps cashiers and servers to take orders, process
+              payments, and register necessary receipts. Kassa receives
+              inventory data from
+              <a href="https://kontur.ru/market" target="”_blank”"
+                >Kontur.Market</a
+              >
+              and sends back transaction history used for business analytics.
+            </p>
+            <p class="pageText article">
+              The app has over 40,000 monthly active users on Windows and
+              Android.
+            </p>
+          </section>
+          <section id="backstory">
+            <h2 class="article">Backstory</h2>
+            <p class="pageText article">
+              When I joined the team in 2020, Kassa was just a simple retail
+              app. It was initially designed for corner shops, where customers
+              would pick up needed goods and pay the cashier at the counter.
+              Below is a demo of the main scenario.
+            </p>
+            <p class="pageText article note">
+              All visuals on this page were originally in Russian. I translated
+              them into English to provide more context for the reader.
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-1-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-1-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-1-tab-video"
+                  poster="images/Cat/Cat-1-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-1-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-1-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-1-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-1-mob-video"
+                  poster="images/Cat/Cat-1-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-1-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-1-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-1-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              In 2022, in search of growth opportunities, our team started
+              investigating the market of public catering — more specifically,
+              the software used by servers for their routine. The research
+              revealed great potential in making Kassa a new player in the
+              field. The product had to be upgraded to a complex POS app to help
+              automate accounting, service, and sale operations in cafes,
+              bakeries, coffee shops, fast-food places, and other eateries.
+            </p>
+          </section>
+          <section id="concept">
+            <h2 class="article">Concept</h2>
+            <p class="pageText article">
+              To set the limits for the future solution, our UX researchers
+              conducted semi-structured interviews with eateries’ owners and
+              staff. I joined to co-host some of the talks and gain insight into
+              on-site processes and workers’ relevant concerns. After
+              summarising the results, we iteratively collaborated with the
+              stakeholders and analysts to form a set of user scenarios to aid
+              with the solution:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Cat/Cat-1-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              We compiled three user personas for these scenarios’ most common
+              real-life combinations. Each persona aligns with a different
+              eatery type:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Cat/Cat-2-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              Then, our analysts documented the target scenarios and personas
+              into a solid concept with the solution requirements and handed the
+              artefacts to me for interface design.
+            </p>
+          </section>
+          <section id="design">
+            <h2 class="article">Design</h2>
+            <p class="pageText article">
+              With the new user flows in question, the app seemed to require a
+              brand-new UI. However, my first move was to understand which parts
+              of the existing design I could reuse and which I had to create
+              from scratch. For that, I compared the catering scenarios against
+              the one of an ordinary sale. They all entailed working with cart
+              items and taking payment, which hinted that the solution might
+              employ some of the present layouts with only specific
+              enhancements.
+            </p>
+            <p class="pageText article">
+              However, an essential aspect of the catering routine is that
+              servers and baristas handle many orders simultaneously. I had to
+              address that with an interface that allows them to overview all
+              ongoing orders and easily segue between them.
+            </p>
+          </section>
+          <section id="table-orders">
+            <h3 class="article">Table orders</h3>
+            <p class="pageText article">
+              Taking table orders is the most common scenario at eateries.
+              Servers multitask and constantly shift focus, bouncing between
+              duties: welcoming guests, placing orders, collecting and serving
+              food, taking payment, cleaning up, etc. A POS terminal is involved
+              in most of these activities, so fast and easy UI interaction is a
+              priority.
+            </p>
+            <p class="pageText article">
+              I started from the routing screen — the entry point for managing
+              all table orders. Before doing any design, I reached out online
+              for inspiration, looking for present solutions. Some of the
+              well-known apps in the industry featured a seating chart that
+              showed tables in the UI according to their actual arrangement. I
+              found the idea promising, yet resource-heavy in development and
+              harmful to practicality and aesthetics. A discussion with
+              stakeholders confirmed my foresight: we couldn’t afford the
+              approach due to a time shortage.
+            </p>
+            <p class="pageText article">
+              I began to think of a simpler way to display tables. After a few
+              trial-and-error cycles, I opted for a grid view, with each table
+              represented as a numbered tile. With explicit ordering and large
+              hitbox areas, servers could easily find and access any table. I
+              also thought having dropdown menus for quick actions would be a
+              good idea: the scenario-demanded features would be close to users’
+              reach yet hidden by default for cleaner UI. Here is the concept
+              that I ended up with:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Cat/Cat-3-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              The grid’s final design depended strongly on the rest of the
+              catering UI. That’s why I populated the sketches with content and
+              made all further refinements gradually as I progressed with other
+              parts of the task. While polishing the Table screen visually and
+              function-wise, I remembered two essential UX concerns: fast
+              on-grid navigation and accessibility. Users had to have no problem
+              scanning for needed info and distinguishing between free and
+              occupied tables.
+            </p>
+            <p class="pageText article">
+              Below is the complete design and its highlights:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-2-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-2-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-2-tab-video"
+                  poster="images/Cat/Cat-2-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-2-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-2-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-2-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-2-mob-video"
+                  poster="images/Cat/Cat-2-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-2-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-2-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-2-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              While the grid is perfect for the overview, servers spend most of
+              their time working with orders’ contents: adding new items while
+              taking an order, editing existing entries, or removing cancelled
+              dishes from the list. The interface for these scenarios had to be
+              informative and functional yet not overwhelming.
+            </p>
+            <p class="pageText article">
+              Luckily, Kassa already had the Cart screen, which made a good
+              foundation upon which to build. Fellow designer Alexander Kryazhev
+              accompanied me as we turned this UI into Table View. The most
+              significant tweak we agreed on was guest tabs. The tabs allow
+              servers to swiftly jump between guests’ orders and perform actions
+              with each order. The navigation is fast, even with a large number
+              of guests. Here’s how it works:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-3-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-3-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-3-tab-video"
+                  poster="images/Cat/Cat-3-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-3-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-3-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-3-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-3-mob-video"
+                  poster="images/Cat/Cat-3-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-3-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-3-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-3-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              We loved how guest tabs fit into the cart UI. They worked well
+              with the classic mechanics, such as modifying an item or adding to
+              an order by tapping a tile. That enabled the screen to support
+              asynchronous fill-up — no more changes were needed.
+            </p>
+            <p class="pageText article">
+              With payment flows, the story was similar: we knew we could reuse
+              the core UI of the Payment screen, but there had to be some smart
+              adjustments. The biggest challenge here was how people pay in
+              cafes and restaurants: the bill might be shared, and some guests
+              might wish to pay or leave before others. We had to let servers
+              conveniently take mixed payments and see the orders due.
+            </p>
+            <p class="pageText article">
+              Our solution was batching — selecting orders to process as a
+              single payment. This approach gives users flexibility over what
+              orders to charge for and when thus covering the diversity of
+              real-life cases. Here’s an example of batching at work:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-4-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-4-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-4-tab-video"
+                  poster="images/Cat/Cat-4-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-4-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-4-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-4-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-4-mob-video"
+                  poster="images/Cat/Cat-4-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-4-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-4-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-4-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="takeaway-orders">
+            <h3 class="article">Takeaway orders</h3>
+            <p class="pageText article">
+              Ordering takeaway has become more popular over the last decade,
+              mainly due to the COVID-19 pandemic. People favour self-pickup and
+              delivery as safer and less time-consuming than eating out.
+              However, supporting takeaway is always challenging for cafes and
+              restaurants. Firstly, orders aren’t only created on-site — they
+              also come from third-party online services. Secondly, eateries
+              track the status of each order to keep customers informed and
+              measure business pipeline KPIs. Finally, doing delivery means that
+              staff should now communicate with couriers — and a good POS
+              application has to support that bond on several levels.
+            </p>
+            <p class="pageText article">
+              I wanted the design of the overview screen for takeaway orders to
+              allow for convenient eye-scanning and provide clear cues about
+              whether the user has to do anything for the order to proceed in
+              the system. For this purpose, I decided to display orders as a
+              list, with key properties available at a glance. I introduced the
+              side panel to let servers see detailed info and manage orders.
+              Finally, I added search and filter controls so that workers can
+              effectively find specific entries. Here’s a demo of the mentioned
+              features:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-5-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-5-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-5-tab-video"
+                  poster="images/Cat/Cat-5-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-5-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-5-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-5-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-5-mob-video"
+                  poster="images/Cat/Cat-5-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-5-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-5-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-5-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              From the panel, servers can open orders and access the familiar
+              fill-up UI. Here, the Cart screen from retail Kassa apperars with
+              only a few changes:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-6-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-6-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-6-tab-video"
+                  poster="images/Cat/Cat-6-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-6-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-6-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-6-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-6-mob-video"
+                  poster="images/Cat/Cat-6-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-6-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-6-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-6-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              Predictably, interface recycling came into play in the payment
+              stage as well. It was much easier to pull off than for table
+              orders: there’s no splitting the bill for takeaway, plus some
+              orders come prepaid, so the relative UI is not needed.
+            </p>
+            <p class="pageText article">
+              The video below shows the final steps of order processing:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-7-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-7-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-7-tab-video"
+                  poster="images/Cat/Cat-7-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-7-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-7-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-7-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-7-mob-video"
+                  poster="images/Cat/Cat-7-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-7-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-7-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-7-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="combining-scenarios">
+            <h3 class="article">Combining scenarios</h3>
+            <p class="pageText article">
+              Working with either tables or takeaway alone is already fairly
+              complicated. Our research showed, however, that a significant part
+              of the targeted businesses was practising both formats, setting a
+              hopeful trend for all-around catering. Keeping that in mind
+              throughout the design phase, I aimed to wrap each of the two main
+              scenarios into an independent UI yet place all the available
+              functionality at users’ fingertips.
+            </p>
+            <p class="pageText article">
+              To achieve this, I ultimately framed the two overview screens
+              within the joint layout, where servers can quickly switch between
+              tables and takeaway orders. They can also do classic “retail-like”
+              sales — if some guest only asks for a bottle of water or a quick
+              snack. Servers can put a sale on hold to handle other orders and
+              then return to the sale with the whole cart restored. This
+              functionality gives eateries more flexibility in utilising Kassa
+              for their scenarios and needs.
+            </p>
+            <p class="pageText article">
+              See how all the new catering features meet in the app:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="kassaVideoOrientationSwitch">
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton active"
+                  id="cat-8-tab-switch"
+                >
+                  Tablet
+                </p>
+                <p
+                  class="pageText kassaVideoOrientationSwitchButton inactive"
+                  id="cat-8-mob-switch"
+                >
+                  Mobile
+                </p>
+              </div>
+              <div class="visualAligner default">
+                <video
+                  muted
+                  class="kassaVideo"
+                  id="cat-8-tab-video"
+                  poster="images/Cat/Cat-8-tab-poster.png"
+                >
+                  <source src="videos/Cat/Cat-8-tab.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-8-tab.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-8-tab.ogv" type="video/ogg" />
+                </video>
+                <video
+                  muted
+                  class="kassaVideo inactive"
+                  id="cat-8-mob-video"
+                  poster="images/Cat/Cat-8-mob-poster.png"
+                >
+                  <source src="videos/Cat/Cat-8-mob.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-8-mob.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-8-mob.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              I also considered adaptivity to ensure the solution translates
+              well to devices with various display sizes. This led to
+              line-wrapping in the table grid, the compact mode for a takeaway
+              order list, and some UX-motivated resizing constraints:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner wide">
+                <video
+                  muted
+                  class="kassaWideVideo"
+                  id="cat-9-video"
+                  poster="images/Cat/Cat-9-poster.png"
+                >
+                  <source src="videos/Cat/Cat-9.mp4" type="video/mp4" />
+                  <source src="videos/Cat/Cat-9.webm" type="video/webm" />
+                  <source src="videos/Cat/Cat-9.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article note">
+              The rest of Kassa's UI became responsive in 2021.
+              <a href="/responsive-UI.html">Read this case</a> on how I made it
+              happen.
+            </p>
+          </section>
+          <section id="development-and-testing">
+            <h2 class="article">Development & testing</h2>
+            <p class="pageText article">
+              Once the designs were ready, I handed them off to the development
+              team. Along with screens and components, I provided extensive
+              descriptions of UI behaviour logic, between-screen transitions,
+              animation and adaptivity rules. The team — particularly the
+              outstaff specialists involved — found those artefacts helpful.
+              They also appreciated the reuse of the existing interfaces — it
+              substantially cut workday costs.
+            </p>
+            <p class="pageText article">
+              After the development was complete and the first test build was
+              reviewed by our testing crew, Alexander Kryazhev and I joined the
+              process to inspect the implementation for undiscovered visual and
+              interaction-related bugs. We found several defects, most of which
+              were fixed before the release. We put the remaining ones into the
+              backlog.
+            </p>
+          </section>
+          <section id="impact">
+            <h2 class="article">Impact</h2>
+            <p class="pageText article">
+              Upgrading Kassa to accommodate the most popular eateries’
+              scenarios
+              <span
+                >let our product enter the new market of public catering.</span
+              >
+              The presented features attracted a notable number of new users,
+              and <span>our user base grew by 6%</span> in the first quarter
+              after the release.
+            </p>
+            <p class="pageText article">
+              Our marketing department is now promoting the introduced
+              functionality to more potential customers through various
+              channels. Kassa has become a worthy competitor to other catering
+              POS applications and will continue striving to grow its market
+              share.
+            </p>
+          </section>
+          <section id="support-and-scaling">
+            <h2 class="article">Support & scaling</h2>
+            <p class="pageText article">
+              Since the debut release, our team has been monitoring user
+              feedback. To address the most popular queries, we’ve already
+              rolled out several follow-up releases with bug fixes and usability
+              improvements, and more are on the way.
+            </p>
+            <p class="pageText article">
+              I am happy with the result. The new interface is clean and
+              minimalist yet self-explanatory and versatile. It is even easier
+              to learn for continuing users as it relies on the basic, familiar
+              in-app mechanics. Lastly, the solution is modular and, therefore,
+              flexible. That means that any prospective scale-up — adding new
+              order types or expanding existing possibilities — would be smooth
+              and at lesser production costs.
+            </p>
+            <div class="caseArticleFooter">
+              <div class="caseArticleDivider"></div>
+              <div class="caseArticleFooterLinks">
+                <div class="caseArticleFooterCaseLink">
+                  <a href="/settings-redesign.html"
+                    >&gt; Read next case: Settings redesign</a
+                  >
+                </div>
+                <div class="caseArticleFooterSocialLinks">
+                  <a
+                    href="https://www.linkedin.com/in/igorkotov-pd/"
+                    target="”_blank”"
+                    >LinkedIn</a
+                  >
+                  <a href="https://telegram.me/igorkotov" target="”_blank”"
+                    >Telegram</a
+                  >
+                  <a href="mailto:igorkotov@zoho.com">Email</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <script src="scripts/Cat.js"></script>
+  </body>
+</html>

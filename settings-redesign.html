@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <title>Settings redesign ⋅ Igor Kotov</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/images/favicons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/images/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/images/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/images/favicons/site.webmanifest" />
+  </head>
+  <body>
+    <div class="content">
+      <nav class="caseToc">
+        <ul>
+          <li class="backlink">
+            <a class="backlink" href="/index.html">&lt; Back to all cases</a>
+          </li>
+          <li><a class="summary activeTocItem" href="#summary">Summary</a></li>
+          <li>
+            <a class="about-the-product" href="#about-the-product"
+              >About the product</a
+            >
+          </li>
+          <li><a class="backstory" href="#backstory">Backstory</a></li>
+          <li>
+            <a class="reaching-out-to-business" href="#reaching-out-to-business"
+              >Reaching out to business</a
+            >
+          </li>
+          <li>
+            <a class="user-research" href="#user-research">User research</a>
+          </li>
+          <li>
+            <a class="concept" href="#concept">Concept</a>
+          </li>
+          <li>
+            <a class="concept-validation" href="#concept-validation"
+              >Concept validation</a
+            >
+          </li>
+          <li>
+            <a class="documentation" href="#documentation">Documentation</a>
+          </li>
+          <li>
+            <a class="design" href="#design">Design</a>
+            <ul>
+              <li>
+                <a class="global-layout" href="#global-layout">Global layout</a>
+              </li>
+              <li>
+                <a class="widget-components" href="#widget-components"
+                  >Widget components</a
+                >
+              </li>
+              <li>
+                <a class="selective-editing" href="#selective-editing"
+                  >Selective editing</a
+                >
+              </li>
+              <li>
+                <a class="state-indication" href="#state-indication"
+                  >State indication</a
+                >
+              </li>
+              <li>
+                <a
+                  class="redirecting-to-settings"
+                  href="#redirecting-to-settings"
+                  >Redirecting to Settings</a
+                >
+              </li>
+              <li>
+                <a class="user-onboarding" href="#user-onboarding"
+                  >User onboarding</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="development-and-testing" href="#development-and-testing"
+              >Development & testing</a
+            >
+          </li>
+          <li>
+            <a class="impact" href="#impact">Impact</a>
+          </li>
+          <li>
+            <a class="support-and-scaling" href="#support-and-scaling"
+              >Support & scaling</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <article class="caseArticle">
+        <section id="summary">
+          <div class="caseArticleHeader">
+            <div class="caseArticleHeaderBacklink">
+              <a href="/index.html">&lt; Back to all cases</a>
+            </div>
+            <div class="caseArticleHeaderCoverFrame">
+              <img
+                class="caseArticleHeaderCoverDesktop"
+                src="images/Set/Set-cover-desktop.png"
+              />
+              <img
+                class="caseArticleHeaderCoverMobile"
+                src="images/Set/Set-cover-mobile.png"
+              />
+            </div>
+            <div class="caseArticleHeaderInfo">
+              <h1 class="article">Settings redesign</h1>
+              <div class="caseArticleHeaderInfoProps">
+                <p class="labelText caseArticleHeaderInfoPropName">Product</p>
+                <a
+                  class="labelText caseArticleHeaderInfoPropValue"
+                  href="https://kontur.ru/market"
+                  target="”_blank”"
+                  >Kontur.Market</a
+                >
+                <p class="labelText caseArticleHeaderInfoPropName">Year</p>
+                <p class="labelText caseArticleHeaderInfoPropValue">2023</p>
+              </div>
+              <p class="pageText article">
+                I redesigned Market’s settings page, improving the user
+                experience and refreshing the appearance. This work helped to
+                increase customer satisfaction and strengthen the code
+                infrastructure. The solution also became a foundation for the
+                follow-up release to boost upselling inside the app.
+              </p>
+              <p class="pageText article">
+                My contribution included justifying the task to business, doing
+                user research, designing the interfaces, supervising the
+                development, testing the implementation, and collecting user
+                feedback.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="articleBody">
+          <section id="about-the-product">
+            <h2 class="article">About the product</h2>
+            <p class="pageText article">
+              Kontur.Market is a web application for small and grown-up
+              businesses. It helps business owners to automate accounting and
+              document exchange with controlling authorities. It also provides
+              tools for performance analytics and decision-making.
+            </p>
+            <p class="pageText article">
+              The app has over 45,000 monthly active users.
+            </p>
+          </section>
+          <section id="backstory">
+            <h2 class="article">Backstory</h2>
+            <p class="pageText article">
+              Like many web apps, Market has a settings section. There, users
+              can review their personal data and billing information, manage
+              third-party service integrations, and set other preferences.
+            </p>
+            <p class="pageText article">
+              A few years ago, Market was an emerging service with limited
+              functionality, so there wasn’t much to configure — all the
+              controls fit inside a small side panel. As the product grew, the
+              scope of supported features and connections widened substantially.
+              The rise brought along the need for dozens of new settings, which
+              felt too much for the modest side panel UI. The overload of
+              content made it hard to scan and navigate through:
+            </p>
+            <p class="pageText article note">
+              All visuals on this page were originally in Russian. I translated
+              them into English to provide more context for the reader.
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-1-video"
+                  poster="images/Set/Set-1-poster.png"
+                >
+                  <source src="videos/Set/Set-1.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-1.webm" type="video/webm" />
+                  <source src="videos/Set/Set-1.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              Our team, especially the designers, were dissatisfied with how
+              confusing and cluttered Settings became. No one ever got around to
+              fixing the problem, though — we thought the settings section was
+              purely technical and rarely visited by users. Updating the UI was
+              expected to require more resources than any measurable profit
+              would make up for.
+            </p>
+            <p class="pageText article">
+              I decided to investigate the case and find the point of interest
+              intersection for the users, the business, and the design.
+            </p>
+          </section>
+          <section id="reaching-out-to-business">
+            <h2 class="article">Reaching out to business</h2>
+            <p class="pageText article">
+              The controls in the settings panel supported many different parts
+              of Market. My idea was to approach product managers across all
+              these departments and ask them to open up a little about related
+              plans. After that, we brainstormed whether we could move towards
+              fulfilling these ambitions by redesigning Settings.
+            </p>
+            <p class="pageText article">
+              Among all the conversations with the decision-makers, one got
+              things moving. The owner of our billing department shared that
+              they were looking for a way to boost KPIs in upselling. The
+              studies on the subject showed that users rarely purchased add-ons
+              from the Market app. One of the reasons was that the app only
+              offered additional modules contextually, for example, when users
+              attempted to access a feature only available on a higher-tier
+              plan. To explore all tariffs and options, the customers had to
+              visit the dedicated landing page — which wasn’t easily
+              discoverable from the app itself.
+            </p>
+            <p class="pageText article">
+              Talking about possible solutions, the owner mentioned the concept
+              of a page inside Market, where users could see personalised deals
+              according to their already-purchased modules and business field.
+              At that time, he had been thinking about it for quite a while but
+              could not shape a vision of any viable implementation. To me, that
+              sounded like a match. I laid out my concerns about the outdated
+              settings section and supposed that renewing it might as well
+              provide a necessary base for “the Showcase page”.
+            </p>
+            <p class="pageText article">
+              We found the notion hopeful but needed some artefacts to proceed.
+              I took time to materialise the concept and come back to have it
+              evaluated by the team.
+            </p>
+          </section>
+          <section id="user-research">
+            <h2 class="article">User research</h2>
+            <p class="pageText article">
+              After the talks with the managers, I got a good picture of the new
+              Settings. But before making any sketches, I decided to get some
+              user feedback to ensure the design would align with customers’
+              needs. Together with our UX research team, we did a two-step study
+              to understand users’ thoughts on the current Settings, reveal
+              usability issues, and collect ideas for improvement.
+            </p>
+            <p class="pageText article">
+              The first part of the research was semi-structured interviews,
+              which confirmed our team’s assumptions. The participants described
+              existing Settings as disorganised and overly complex. They also
+              complained about the ambiguous, sometimes insufficient status
+              indication. One of the respondents said: “Not too much is clear
+              here, so I don’t see this [page] often. If I needed to tweak
+              anything, I’d more likely contact the support”. These insights
+              highlighted that functionality and simplicity should be a top
+              concern during the section redesign.
+            </p>
+            <p class="pageText article">
+              Secondly, we set up a series of card-sorting sessions. The goal
+              was to understand how our users classify settings in Market and
+              how they motivate the grouping. In each session, we asked the
+              participants to put configurable entities into the predefined
+              categories. To reduce bias, we did the testing using several
+              slightly different category lists. Here are some of the complete
+              mappings:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Set/Set-1-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              The results weren’t straightforward. The users clustered most of
+              the entities similarly, which suggested a way to organise the
+              corresponding settings in the new UI. At the same time, there were
+              some contrasting choices the participants made. As the follow-up
+              conversations showed, the approach to the task depended on the
+              type of each customer’s business and their working routine. I
+              concluded that developing a separate Settings structure for each
+              user persona would be impractical. Instead, I focused on building
+              a universal, expressive arrangement that would be easy to learn
+              and use for all.
+            </p>
+          </section>
+          <section id="concept">
+            <h2 class="article">Concept</h2>
+            <p class="pageText article">
+              At the time, our design team was doing a big cleanup across the
+              whole application, refreshing visual style and unifying interface
+              patterns. Drafting the global layout of the new Settings, I wanted
+              to get some inspiration from the already-compiled and time-tested
+              layouts.
+            </p>
+            <p class="pageText article">
+              I liked the format of Market’s Reports page, where different data
+              types show up in separate blocks called “widgets.” The widgets
+              display key metrics for quick assessments, and clicking a block
+              opens a detailed report:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Set/Set-2-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              The segmented nature of Reports appealed to me: it provided a good
+              overview of the diverse page content yet didn’t overwhelm with too
+              much info upfront. This modular UI allowed for more precise and
+              effective user onboarding than standard linear layouts.
+            </p>
+            <p class="pageText article">
+              Market had many more settings than report types, so placing all
+              preferences on one page didn’t seem very user-friendly. To help
+              users better navigate and search for desired settings, I
+              introduced sections in a sidebar. Here’s how the draft came out:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Set/Set-3-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              When it came to appearance, I aimed for consistency early on. The
+              settings had to be visually coherent both internally and with the
+              rest of Market. To achieve this, I planned to create a set of
+              reusable components based on our UI kit so that designers and
+              developers could make any widget just by stacking those
+              components. During the concept phase, I sketched some of those
+              blocks and described the order in which they might appear in a
+              widget:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Set/Set-4-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              Finally, I built the first widgets to get a rough representation
+              of Market settings in a reimagined view. It was now time to get
+              feedback from the team and the users.
+            </p>
+          </section>
+          <section id="concept-validation">
+            <h2 class="article">Concept Validation</h2>
+            <p class="pageText article">
+              For the validation, I prepared an interactive prototype. In the
+              prototype, one could open the new Settings from the Market's
+              Dashboard screen, jump between grouped preferences via the
+              sidebar, and change some of them:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-2-video"
+                  poster="images/Set/Set-2-poster.png"
+                >
+                  <source src="videos/Set/Set-2.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-2.webm" type="video/webm" />
+                  <source src="videos/Set/Set-2.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              First, during moderated tests, I evaluated the concept with some
+              of our most loyal customers. They received the design well.
+              However, some users remarked on the unfamiliar naming in the
+              sidebar, which made them “click through every subsection to find
+              the new locations of known settings”.
+            </p>
+            <p class="pageText article">
+              I shared this point with fellow designers as I passed them the
+              prototype. We agreed that the issue wasn’t critical: regardless of
+              the labelling, users would have to explore the interface the first
+              time they see it — and we expected to steepen the learning curve
+              with an onboarding tour. The discussion with the designers also
+              drew my attention to several essential details to polish in the
+              final solution.
+            </p>
+            <p class="pageText article">
+              Next, I presented the concept to our developers and asked them if
+              rebuilding Settings could benefit the code infrastructure. After a
+              short code review, the devs pointed out that the task itself would
+              be resource-heavy, but the positive impact would become more and
+              more prominent over time. With both frontend and backend code
+              refactored, Settings and the connected app modules would be much
+              easier to support and evolve.
+            </p>
+            <p class="pageText article">
+              Finally, I came back to the billing department owner. In addition
+              to the main interactive prototype, I demonstrated its modified
+              version where “the Showcase page” appeared as a default
+              subsection:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-3-video"
+                  poster="images/Set/Set-3-poster.png"
+                >
+                  <source src="videos/Set/Set-3.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-3.webm" type="video/webm" />
+                  <source src="videos/Set/Set-3.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              I backed up that demo with the gathered motivation, which
+              ultimately sold the idea to the stakeholder — he was ready to
+              allocate his resource quota for the development. Planning the
+              further work, we settled that the functionality would be shipped
+              to users gradually, and the upselling page would only be released
+              after the Settings layout updates.
+            </p>
+          </section>
+          <section id="documentation">
+            <h2 class="article">Documentation</h2>
+            <p class="pageText article">
+              At first glance, Improving Settings seemed like purely cosmetic
+              work. However, the concept phase made it clear that for a quality
+              implementation, we had to account for many subtleties,
+              dependencies, and user scenarios. That’s why thorough analytic
+              documentation was a must.
+            </p>
+            <p class="pageText article">
+              Together with our analysts and project managers, we recorded all
+              possible states of then-current settings and related business
+              logic. Then, we tidied it up and set down the “to-be”
+              requirements. In addition, we collected interaction metrics on the
+              existing “side-panel” Settings.
+            </p>
+            <p class="pageText article">
+              I used this data to ensure the final design was thoughtful and
+              inclusive.
+            </p>
+          </section>
+          <section id="design">
+            <h2 class="article">Design</h2>
+            <p class="pageText article">
+              In its ultimate form, the new interface covered a lot of different
+              aspects of the task and had several specific mechanics involved. I
+              describe the most notable ones below.
+            </p>
+          </section>
+          <section id="global-layout">
+            <h3 class="article">Global layout</h3>
+            <p class="pageText article">
+              Since the concept, a few things changed in the global layout. Most
+              of the refinements were inspired by the ideas put forward by
+              analysts and designers during concept validation.
+            </p>
+            <p class="pageText article">
+              Relying on the documentation and user research, I regrouped the
+              widgets and optimised the sidebar by making subsection titles more
+              concise and removing nesting. I also took away the redundant
+              titles on top of a selected section. As a result, the UI became
+              lighter and better for intuitive user navigation.
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video muted autoplay loop class="marketVideo" id="set-4-video">
+                  <source src="videos/Set/Set-4.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-4.webm" type="video/webm" />
+                  <source src="videos/Set/Set-4.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="widget-components">
+            <h3 class="article">Widget components</h3>
+            <p class="pageText article">
+              Thanks to the exhaustive documentation produced earlier, I created
+              a kit of block-type UI components that one could use to quickly
+              build any setting widget or modify an existing one. Every such
+              component is a wrapper over elements from our team’s React
+              library, which means the specialised kit is easy to replicate and
+              maintain in code.
+            </p>
+            <p class="pageText article">Here are the components:</p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Set/Set-5-img.png" />
+              </div>
+            </div>
+          </section>
+          <section id="selective-editing">
+            <h3 class="article">Selective editing</h3>
+            <p class="pageText article">
+              At the time, our design team was switching to selective editing
+              all across the Market UI. In this mechanic, a page appears in
+              read-only mode by default, while users can independently put its
+              parts into edit mode.
+            </p>
+            <p class="pageText article">
+              In the early prototypes, whole widgets could toggle between view
+              and edit states, and all changes could be saved with a single
+              button click. This approach got a fair share of criticism from my
+              fellow designers. The main problem was with the complex parameters
+              that were not just edited as plain text but had a dedicated
+              interface instead. Embedding this UI into widgets seemed tedious
+              and could lead to content abruptly jumping when the user goes from
+              view to edit mode and back.
+            </p>
+            <p class="pageText article">
+              There were other minor issues with the above idea. For example, it
+              was unclear how binary settings should behave, as the nature of a
+              toggle control entails that the changes take effect immediately
+              and do not require confirmation. One more potential drawback had
+              to do with displaying uneditable fields — those would have to look
+              “disabled” in the edit mode. Implementing this would only waste
+              developers' time and make the layout messier.
+            </p>
+            <p class="pageText article">
+              I reconsidered the editing and made it more granular. Now, users
+              can interact with each setting independently by clicking on it.
+              Basic settings can be changed on the spot, while more elaborate
+              ones open modal windows. If multiple actions are available for a
+              setting, they move into a dropdown menu:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-5-video"
+                  poster="images/Set/Set-5-poster.png"
+                >
+                  <source src="videos/Set/Set-5.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-5.webm" type="video/webm" />
+                  <source src="videos/Set/Set-5.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              I like the way it works. With selective editing, Settings better
+              aid user focus, helping minimise errors and improve performance in
+              related scenarios.
+            </p>
+          </section>
+          <section id="state-indication">
+            <h3 class="article">State indication</h3>
+            <p class="pageText article">
+              One of the main flaws of the old Settings was their low
+              informativity. The statuses of connections and other
+              configurations lacked clarity and, in some cases, were not
+              displayed at all. Because of this, users had to spend extra time
+              figuring out whether they had set up a particular feature
+              correctly or if any action was required.
+            </p>
+            <p class="pageText article">
+              In the redesign, I added success badges. They appear in widgets of
+              active integrations, allowing users to quickly see what
+              functionality is enabled. The on-hover tooltips explicitly convey
+              the meaning of the badges:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-6-video"
+                  poster="images/Set/Set-6-poster.png"
+                >
+                  <source src="videos/Set/Set-6.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-6.webm" type="video/webm" />
+                  <source src="videos/Set/Set-6.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              Of course, there can also be warnings and errors. These showed up
+              inconsistently in the previous interface: it could be a
+              vibrantly-coloured text, a single icon, both or none. Now, all
+              such states are communicated concisely through compact
+              notification blocks — the same ones we use widely across Market.
+              If there’s at least one notification in a Settings subsection, the
+              marker appears in the sidebar, and the Settings button in the top
+              bar fills with colour. This hint guarantees that the user won’t
+              miss the alert regardless of what page they are currently on.
+              Furthermore, it paves the way for locating and handling errors
+              step by step (or click by click, speaking technically):
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-7-video"
+                  poster="images/Set/Set-7-poster.png"
+                >
+                  <source src="videos/Set/Set-7.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-7.webm" type="video/webm" />
+                  <source src="videos/Set/Set-7.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="redirecting-to-settings">
+            <h3 class="article">Redirecting to Settings</h3>
+            <p class="pageText article">
+              Settings are not always opened directly from the Market top bar.
+              Sometimes, users get there from other app sections or through the
+              quick search field on the Home screen. In those scenarios, the old
+              UI was confusing: the side panel just slid into view, exposing all
+              configurations available. Users had to go through this long list
+              to find the setting they needed, which held back the workflow.
+            </p>
+            <p class="pageText article">
+              I fixed this in the new solution. Now, when visited from any other
+              in-app page, Settings open at the right subsection. Then, the
+              target widget flashes to draw the user’s attention to the relevant
+              content.
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-8-video"
+                  poster="images/Set/Set-8-poster.png"
+                >
+                  <source src="videos/Set/Set-8.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-8.webm" type="video/webm" />
+                  <source src="videos/Set/Set-8.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article"></p>
+          </section>
+          <section id="user-onboarding">
+            <h3 class="article">User onboarding</h3>
+            <p class="pageText article">
+              To smoothly move existing users onto the new interface, I decided
+              to add a short onboarding tour. It launches when Settings are
+              opened for the first time and briefly explains the key features:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-9-video"
+                  poster="images/Set/Set-9-poster.png"
+                >
+                  <source src="videos/Set/Set-9.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-9.webm" type="video/webm" />
+                  <source src="videos/Set/Set-9.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+          </section>
+          <section id="development-and-testing">
+            <h2 class="article">Development & testing</h2>
+            <p class="pageText article">
+              I included all the principles above and the actual designs into a
+              complete developer handoff. Additionally, I hosted a presentation
+              where I showed the solution to the team, pointing out the most
+              exciting aspects and answering questions.
+            </p>
+            <p class="pageText article">
+              The development spanned two work sprints and took almost half a
+              year. During this time, I was thoroughly curating the process.
+              Every day, we had short meetings to update each other on the
+              ongoing and completed tasks and tackle immediate problems.
+              Sometimes, we made agreements that demanded changes in the
+              documentation or the prototypes — I made sure to revise the
+              artefacts in time.
+            </p>
+            <p class="pageText article">
+              Over those six months, several other tasks went through
+              development that touched Settings interface-wise or shared their
+              back end. That is why the most significant challenge for our
+              feature team was to debate and agree on decisions regarding
+              release sequencing, resolving intertask conflicts and dealing with
+              code dependencies.
+            </p>
+            <p class="pageText article">
+              During testing, I joined our QA engineers to review the in-product
+              implementation of Settings. I did a few iterations of inspection
+              focusing on appearance and UX mechanics. After every iteration, I
+              passed the bugs to the testers and developers for fixes. That
+              ultimately made the new section look and behave just like in the
+              design.
+            </p>
+          </section>
+          <section id="impact">
+            <h2 class="article">Impact</h2>
+            <p class="pageText article">
+              By refreshing Settings, we levelled up one of the most essential
+              interfaces in the Market. The new UI is more organised,
+              user-friendly, sustainable, and visually pleasing.
+            </p>
+            <p class="pageText article">
+              The task didn’t aim for any short-term money profit, so getting
+              users' feedback was crucial to check if we were moving in the
+              right direction. I introduced a small banner at the top of the
+              released section. Users saw it after they spent some time working
+              with settings. One could rate the update on a scale of 1 to 5 and
+              optionally write a review:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-10-video"
+                  poster="images/Set/Set-10-poster.png"
+                >
+                  <source src="videos/Set/Set-10.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-10.webm" type="video/webm" />
+                  <source src="videos/Set/Set-10.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              Over the first month after the rollout, I collected over 150
+              responses. They showed that the redesign was welcomed well —
+              <span
+                >84% of the participants awarded it four or five stars:</span
+              >
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner default">
+                <img class="articleImage" src="images/Set/Set-6-img.png" />
+              </div>
+            </div>
+            <p class="pageText article">
+              Just like after any major product update, there was negative
+              feedback, too. Unfortunately, each of the low ratings came with no
+              review attached. Together with the researchers, I plan to contact
+              the unsatisfied users to ask them about any specific complaints
+              and suggestions they might have. If the concerns are rational, I
+              will address them as I improve Settings further.
+            </p>
+          </section>
+          <section id="support-and-scaling">
+            <h2 class="article">Support & scaling</h2>
+            <p class="pageText article">
+              Upgrading the old Settings was beneficial for the app
+              infrastructure. We refactored dated code and reinforced the front
+              end with the component-based widget structure. Making routine
+              fixes and new functionality is now less costly for both designers
+              and developers.
+            </p>
+            <p class="pageText article">
+              With the new modular structure and user experience patterns
+              involved, Settings are now on their way to becoming more than just
+              a utility screen. In further releases, the Billing widget would
+              upscale into a customer-tailored page that would encourage
+              upselling of Market tariffs and add-ons and increase the revenue.
+            </p>
+            <p class="pageText article">
+              I brought the concepts of this ‘showcasing subsection’ to the
+              finished look with the help of a fellow designer, Daniil Imgada.
+              We improved the layout and made the page more engaging by adding
+              illustrations drawn by Daniil and our graphic designer, Polina
+              Molchanova.
+            </p>
+            <p class="pageText article">
+              The page is currently in the development queue:
+            </p>
+            <div class="articleVisualBlock">
+              <div class="visualAligner desktop">
+                <video
+                  muted
+                  class="marketVideo"
+                  id="set-11-video"
+                  poster="images/Set/Set-11-poster.png"
+                >
+                  <source src="videos/Set/Set-11.mp4" type="video/mp4" />
+                  <source src="videos/Set/Set-11.webm" type="video/webm" />
+                  <source src="videos/Set/Set-11.ogv" type="video/ogg" />
+                </video>
+              </div>
+            </div>
+            <p class="pageText article">
+              As the feature lead, I continue to direct how Settings evolve. I
+              indend is to keep the global layout clear and consistent — both
+              graphically and in terms of interactions. Since the redesigned
+              section can now serve marketing needs, it would be vital to set
+              the limits. The users have to be able to complete setting
+              scenarios effectively and not be frustrated by the ads. There has
+              to be a middle ground between the product and the business.
+            </p>
+            <div class="caseArticleFooter">
+              <div class="caseArticleDivider"></div>
+              <div class="caseArticleFooterLinks">
+                <div class="caseArticleFooterCaseLink">
+                  <a href="/responsive-UI.html"
+                    >&gt; Read next case: Responsive UI</a
+                  >
+                </div>
+                <div class="caseArticleFooterSocialLinks">
+                  <a
+                    href="https://www.linkedin.com/in/igorkotov-pd/"
+                    target="”_blank”"
+                    >LinkedIn</a
+                  >
+                  <a href="https://telegram.me/igorkotov" target="”_blank”"
+                    >Telegram</a
+                  >
+                  <a href="mailto:igorkotov@zoho.com">Email</a>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <script src="scripts/Set.js"></script>
+  </body>
+</html>
