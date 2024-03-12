@@ -414,7 +414,7 @@ a.caseArticleHeaderInfoPropValue {
   width: calc(100% + 48px);
 }
 
-@media (width <= 1280px) {
+@media (max-width: 1280px) {
   .caseToc {
     display: none;
   }
@@ -423,7 +423,7 @@ a.caseArticleHeaderInfoPropValue {
   }
 }
 
-@media (width <= 728px) {
+@media (max-width: 728px) {
   * {
     font-size: 14px;
   }
@@ -474,13 +474,13 @@ a.caseArticleHeaderInfoPropValue {
   }
 }
 
-@media (width <= 544px) {
+@media (max-width: 544px) {
   .caseCardContainer ul {
     padding: 48px 0px;
   }
 }
 
-@media (width <= 416px) {
+@media (max-width: 416px) {
   .caseCardContainer ul li {
     border-radius: 0px;
   }
