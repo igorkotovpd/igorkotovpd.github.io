@@ -414,7 +414,7 @@ a.caseArticleHeaderInfoPropValue {
   width: calc(100% + 48px);
 }
 
-@media (max-width: 1280px) and (min-width: 729px) {
+@media (max-width: 1280px) and (min-width: 360px) {
   .caseToc {
     display: none;
   }
