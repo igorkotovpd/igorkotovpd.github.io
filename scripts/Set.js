@@ -3,6 +3,7 @@ window.onload = function () {
   addListenersForToc();
   setUpComputedSizeUpdateForVisuals();
   addListenersForVideos();
+  console.log("page loaded");
 };
 
 // DYNAMIC TOC
