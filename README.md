@@ -1,5 +1,5 @@
 # Igor Kotov ⋅ Product Designer
-4+ years of experience in B2B SaaS. I help businesses grow by building designs that elegantly solve problems, look appealing, and scale flexibly. I strengthen design teams by establishing healthy, transparent communication with non-designers.
+5 years of experience in B2B SaaS. I help businesses grow by building designs that elegantly solve problems, look appealing, and scale flexibly. I strengthen design teams by establishing healthy, transparent communication with non-designers.
 
 - [LinkedIn](https://www.linkedin.com/in/igorkotovpd/)
 - [Telegram](https://telegram.me/igorkotov)
